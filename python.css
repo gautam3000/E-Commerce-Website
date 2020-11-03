@@ -16,6 +16,9 @@ body{
   height:100vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  height:100%;
+  margin:auto;
 }
 ::selection{
   background: rgb(0,123,255,0.3);
