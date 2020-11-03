@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Accordion Menu | CodingNepal</title> -->
+    <link rel="stylesheet" href="python.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Accordion Heading One -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-1" checked>
+      <label for="tab-1">
+        <span>Python Conditions</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Python uses boolean variables to evaluate conditions. The boolean values True and False are returned when an expression is compared or evaluated. For example:<br></b>
+        <h3>Example:</h3><br>
+        <br>
+        x = 2<br>
+        print(x == 2) # prints out True<br>
+        print(x == 3) # prints out False<br>
+        print(x < 3) # prints out True<br>
+        <br>
+        <b>output</b><br>
+        True<br>
+False<br>
+True<br>
+True<br>
+False<br>
+True<br>
+
+In [1]: <br>
+        </p>
+      </div>     
+    </div>
+
+    <!-- Accordion Heading Two -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-2">
+      <label for="tab-2">
+        <span>Conditions</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Python uses boolean variables to evaluate conditions. The boolean values True and False are returned when an expression is compared or evaluated.<br></b>
+        <h3>Example:</h3><br>
+        x = 2<br>
+print(x == 2) # prints out True<br>
+print(x == 3) # prints out False<br>
+print(x < 3) # prints out True<br>
+   <b>output</b><br>
+   True<br>
+False<br>
+True<br>
+        <br></p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Three -->
+    <div class="parent-tab tab-3">
+      <input type="radio" name="tab" id="tab-3">
+      <label for="tab-3" class="tab-3">
+        <span>Numpy Arrays</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Numpy arrays are great alternatives to Python Lists. Some of the key advantages of Numpy arrays are that they are fast, easy to work with, and give users the opportunity to perform calculations across entire arrays.<br></b>
+        <h3>Example:</h3><br>
+        # Create 2 new lists height and weight<br>
+height = [1.87,  1.87, 1.82, 1.91, 1.90, 1.85]<br>
+weight = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]<br>
+
+# Import the numpy package as np<br>
+import numpy as np<br>
+
+# Create 2 numpy arrays from height and weight<br>
+np_height = np.array(height)<br>
+np_weight = np.array(weight)<br>
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Four -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-4">
+      <label for="tab-4">
+        <span>Loops</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>For loops can iterate over a sequence of numbers using the "range" and "xrange" functions. The difference between range and xrange is that the range function returns a new list with numbers of that specified range, whereas xrange returns an iterator, which is more efficient. (Python 3 uses the range function, which acts like xrange). Note that the range function is zero based.<br></b>
+        <h3>Example:</h3><br>
+        # Prints out the numbers 0,1,2,3,4<br>
+for x in range(5):<br>
+    print(x)<br>
+
+# Prints out 3,4,5<br>
+for x in range(3, 6):<br>
+    print(x)<br>
+
+# Prints out 3,5,7<br>
+for x in range(3, 8, 2):<br>
+    print(x)<br>
+    <b>output</b><br>
+
+        </p>
+      </div>
+    </div>
+
+    <!--Accordin Heading Five-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-5">
+      <label for="tab-5">
+        <span>Function</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>L<b>Functions are a convenient way to divide your code into useful blocks, allowing us to order our code, make it more readable, reuse it and save some time. Also functions are a key way to define interfaces so programmers can share their code.<br></b>
+         <h3>Example</h3><br>
+         def my_function():<br>
+    print("Hello From My Function!")<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-6">
+      <label for="tab-6">
+        <span>Python Strings Formating</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Python uses C-style string formatting to create new, formatted strings. The "%" operator is used to format a set of variables enclosed in a "tuple" (a fixed size list), together with a format string, which contains normal text together with "argument specifiers", special symbols like "%s" and "%d".<br></b>
+        <h3>Code:</h3><br>
+        # This prints out "John is 23 years old."<br>
+name = "John"<br>
+age = 23<br>
+print("%s is %d years old." % (name, age))<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-7">
+      <label for="tab-7">
+        <span>Classes and Objects</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Objects are an encapsulation of variables and functions into a single entity. Objects get their variables and functions from classes. Classes are essentially a template to create your objects.<br></b>
+        <h3>code:</h3><br>
+        class MyClass:<br>
+    variable = "blah"<br>
+
+    def function(self):<br>
+        print("This is a message inside the class.")<br>
+
+myobjectx = MyClass()<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-8">
+      <label for="tab-8">
+        <span>Dictionaries</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>A dictionary is a data type similar to arrays, but works with keys and values instead of indexes. Each value stored in a dictionary can be accessed using a key, which is any type of object (a string, a number, a list, etc.) instead of using its index to address it.<br></b>
+        <h3>code:</h3><br>
+        phonebook = {}<br>
+phonebook["John"] = 938477566<br>
+phonebook["Jack"] = 938377264<br>
+phonebook["Jill"] = 947662781<br>
+print(phonebook)<br>
+<b>output</b><br>
+{'Jack': 938377264, 'John': 938477566, 'Jill': 947662781}
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

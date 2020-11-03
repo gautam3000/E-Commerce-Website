@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Accordion Menu | CodingNepal</title> -->
+    <link rel="stylesheet" href="c.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Accordion Heading One -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-1" checked>
+      <label for="tab-1">
+        <span>C++ Flow ontrol</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>A simple C++ statement is each of the individual instructions of a program, like the variable declarations and expressions seen in previous sections. They always end with a semicolon (;), and are executed in the same order in which they appear in a program.<br></b>
+        <h3>C++ if Statement</h3>
+        he if keyword is used to execute a statement or block, if, and only if, a condition is fulfilled. Its syntax is:
+
+if (condition) statement
+
+Here, condition is the expression that is being evaluated. If this condition is true, statement is executed. If it is false, statement is not executed (it is simply ignored), and the program continues right after the entire selection statement.
+For example, the following code fragment prints the message (x is 100), only if the value stored in the x variable is indeed 100:<br>
+if (x > 0)<br>
+cout << "x is positive";<br>
+else if (x < 0)<br>
+cout << "x is negative";<br>
+else<br>
+cout << "x is 0";<br>
+        </p>
+      </div>     
+    </div>
+
+    <!-- Accordion Heading Two -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-2">
+      <label for="tab-2">
+        <span>C++ Functions</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In C++, a function is a group of statements that is given a name, and which can be called from some point of the program. The most common syntax to define a function is:<br></b>
+        
+type name ( parameter1, parameter2, ...) { statements }<br>
+<br>
+// function example<br>
+#include <iostream><br>
+using namespace std;<br>
+
+int addition (int a, int b)<br>
+{<br>
+  int r;<br>
+  r=a+b;<br>
+  return r;<br>
+}<br>
+
+int main ()<br>
+{<br>
+  int z;<br>
+  z = addition (5,3);<br>
+  cout << "The result is " << z;<br>
+}<br>
+ <b>output</b><br>
+ The result is 8
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Three -->
+    <div class="parent-tab tab-3">
+      <input type="radio" name="tab" id="tab-3">
+      <label for="tab-3" class="tab-3">
+        <span>C++ Programming Arrays</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>An array is a series of elements of the same type placed in contiguous memory locations that can be individually referenced by adding an index to a unique identifier.</b><br>
+        <h3>Example</h3>
+        // arrays example<br>
+#include <iostream><br>
+using namespace std;<br>
+
+int foo [] = {16, 2, 77, 40, 12071};<br>
+int n, result=0;<br>
+
+int main ()<br>
+{<br>
+  for ( n=0 ; n<5 ; ++n )<br>
+  {<br>
+    result += foo[n];<br>
+  }<br>
+  cout << result;<br>
+  return 0;<br>
+}<br>
+  <b>output</b><br>
+  12206
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Four -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-4">
+      <label for="tab-4">
+        <span>Overloads and templates</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In C++, two different functions can have the same name if their parameters are different; either because they have a different number of parameters, or because any of their parameters are of a different type. For example: <br></b>
+        <h3>Example:</h3>
+        <br>
+        // overloading functions<br>
+#include <iostream><br>
+using namespace std;<br>
+
+int operate (int a, int b)<br>
+{<br>
+  return (a*b);<br>
+}<br>
+
+double operate (double a, double b)<br>
+{<br>
+  return (a/b);<br>
+}<br>
+
+int main ()<br>
+{<br>
+  int x=5,y=2;<br>
+  double n=5.0,m=2.0;<br>
+  cout << operate (x,y) << '\n';<br>
+  cout << operate (n,m) << '\n';<br>
+  return 0;<br>
+}<br>
+<b>output</b><br>
+  10<br>
+  2.5
+        </p>
+      </div>
+    </div>
+
+    <!--Accordin Heading Five-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-5">
+      <label for="tab-5">
+        <span>C++ Programming Strings</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>**In earlier chapters, variables have been explained as locations in the computer's memory which can be accessed by their identifier (their name). This way, the program does not need to care about the physical address of the data in memory; it simply uses the identifier whenever it needs to refer to the variable.</b><br>
+        <br>
+        <h3>Example</h3><br>
+        // my first pointer<br>
+#include <iostream><br>
+using namespace std;<br>
+
+int main ()<br>
+{<br>
+  int firstvalue, secondvalue;<br>
+  int * mypointer;<br>
+
+  mypointer = &firstvalue;<br>
+  *mypointer = 10;<br>
+  mypointer = &secondvalue;<br>
+  *mypointer = 20;<br>
+  cout << "firstvalue is " << firstvalue << '\n';<br>
+  cout << "secondvalue is " << secondvalue << '\n';<br>
+  return 0;<br>
+}<br>
+  <b>output</b><br>
+  firstvalue is 10<br>
+  secondvalue is 20
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-6">
+      <label for="tab-6">
+        <span>Dynamic memory</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In the programs seen in previous chapters, all memory needs were determined before program execution by defining the variables needed. But there may be cases where the memory needs of a program can only be determined during runtime. For example, when the memory needed depends on user input. On these cases, programs need to dynamically allocate memory, for which the C++ language integrates the operators new and delete.<br></b>
+        <h3>Example</h3><br>
+        // rememb-o-matic<br>
+#include <iostream><br>
+#include <new><br>
+using namespace std;<br>
+
+int main ()<br>
+{<br>
+  int i,n;<br>
+  int * p;<br>
+  cout << "How many numbers would you like to type? ";<br>
+  cin >> i;<br>
+  p= new (nothrow) int[i];<br>
+  if (p == nullptr)<br>
+    cout << "Error: memory could not be allocated";<br>
+  else<br>
+  {<br>
+    for (n=0; n<i; n++)<br>
+    {<br>
+      cout << "Enter number: ";<br>
+      cin >> p[n];<br>
+    }<br>
+    cout << "You have entered: ";<br>
+    for (n=0; n<i; n++)<br>
+      cout << p[n] << ", ";<br>
+    delete[] p;<br>
+  }<br>
+  return 0;<br>
+}<br>
+<b>output</b><br>
+How many numbers would you like to type? 5<br>
+Enter number : 75<br>
+Enter number : 436<br>
+Enter number : 1067<br>
+Enter number : 8<br>
+Enter number : 32<br>
+You have entered: 75, 436, 1067, 8, 32,<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-7">
+      <label for="tab-7">
+        <span>Classes</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Classes are an expanded concept of data structures: like data structures, they can contain data members, but they can also contain functions as members.<br></b>
+        <h3>Example:</h3><br>
+        / classes example<br>
+#include <iostream><br>
+using namespace std;<br>
+
+class Rectangle {<br>
+    int width, height;<br>
+  public:<br>
+    void set_values (int,int);<br>
+    int area() {return width*height;}<br>
+};<br>
+
+void Rectangle::set_values (int x, int y) {<br>
+  width = x;<br>
+  height = y;<br>
+}<br>
+
+int main () {<br>
+  Rectangle rect;<br>
+  rect.set_values (3,4);<br>
+  cout << "area: " << rect.area();<br>
+  return 0;<br>
+}<br>
+ <b>output</b><br>
+  area: 12
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-8">
+      <label for="tab-8">
+        <span>C Polymorphism</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Before getting any deeper into this chapter, you should have a proper understanding of pointers and class inheritance. If you are not really sure of the meaning of any of the following expressions, you should review the indicated sections:
+        </b><br>
+       <h3>Example:</h3><br>
+       / pointers to base class<br>
+#include <iostream><br>
+using namespace std;<br>
+
+class Polygon {<br>
+  protected:<br>
+    int width, height;<br>
+  public:<br>
+    void set_values (int a, int b)<br>
+      { width=a; height=b; }<br>
+};<br>
+
+class Rectangle: public Polygon {<br>
+  public:<br>
+    int area()<br>
+      { return width*height; }<br>
+};<br>
+
+class Triangle: public Polygon {<br>
+  public:<br>
+    int area()<br>
+      { return width*height/2; }<br>
+};<br>
+
+int main () {<br>
+  Rectangle rect;<br>
+  Triangle trgl;<br>
+  Polygon * ppoly1 = &rect;<br>
+  Polygon * ppoly2 = &trgl;<br>
+  ppoly1->set_values (4,5);<br>
+  ppoly2->set_values (4,5);<br>
+  cout << rect.area() << '\n';<br>
+  cout << trgl.area() << '\n';<br>
+  return 0;<br>
+}<br>
+<b>output</b><br>
+ 20<br>
+ 10
+      </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

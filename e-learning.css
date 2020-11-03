@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  body{
+    font-family: sans-serif;
+    overflow: hidden;
+    user-select: none;
+  }
+  nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 70px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .5s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  section{
+    background: url(bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+box{
+    border: 1px solid wheat;
+    width: 100%;
+    
+}
+
+.boxbar{
+    
+    padding: 25px;
+    background:none;
+}
+
+.boxbar address a{
+    float: right;
+    text-decoration: none;
+    color:red;
+}
+
+.boxbar i{
+    color:red;
+    width: 40px;
+}
+.list{
+    border-bottom-width: 1500px;
+    border-bottom: 1px solid white;
+    padding:12px; 
+    float: right;
+}
+
+.list ul li{
+    float: left;
+    text-align: center;
+    width: 110px;
+    list-style-type: none;
+}
+
+
+.list ul li a{
+    text-decoration: none; 
+    color:white;
+
+}
+
+.list ul li a:hover{
+    border-bottom: 4px solid green;
+    padding: 2px;
+}
+body{
+     background-image: url(sergey-zolkin-_UeY8aTI6d0-unsplash.jpg);
+     height:100vh;
+     background-size: cover;
+     background-position: center;
+     
+}
+h2{
+   float: left;
+}
+        
+.writer{
+    width: 650px;
+    
+}
+
+.writer h2{
+    font-family: titillium web , sans-serif;
+    top: 50%;
+    left: 40%;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;;
+}
+
+.writer h1{
+    font-family: quicksand ,sans-serif;
+    text-transform: capitalize;
+    color:rgb(231, 255, 11);
+    font-size: 40px;
+    width: 600px;
+    position: absolute;
+    left: 1%;
+    margin-top: 10px;
+    
+}
+.writer p{
+    font-family: Georgia, 'Times New Roman', Times, serifs;
+    color: greenyellow;
+    padding-top: 80px;
+    padding-left: 28px;
+    font-size: 30px;
+    width: fit-content;
+
+}
+
+.writer form input[type="submit"]{
+    position:absolute;
+    top: 70%;
+    left: 44%;
+    border: springgreen;
+    color:white;
+    background-color: red;
+    text-transform: uppercase;
+    padding: 18px;
+    width: 150px;
+    
+    
+}
+
+.writer form input[type="submit"]:hover{
+    background: green;
+    
+}
+.writer2 form input[type="submit"]{
+  position:absolute;
+    top: 70%;
+    left: 51%;
+    border: springgreen;
+    color:white;
+    background-color: red;
+    text-transform: uppercase;
+    padding: 18px;
+    width: 150px;
+    
+}
+.writer2 form input[type="submit"]:hover{
+  background: green;

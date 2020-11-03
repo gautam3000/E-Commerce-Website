@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Accordion Menu | CodingNepal</title> -->
+    <link rel="stylesheet" href="c.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Accordion Heading One -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-1" checked>
+      <label for="tab-1">
+        <span>Hello World using Java Programming.</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>
+          Live Demo<br>
+
+          public class MyFirstJavaProgram {<br>
+          
+             /* This is my first java program.<br>
+              * This will print 'Hello World' as the output<br>
+              */
+          
+             public static void main(String []args) {<br>
+                System.out.println("Hello World"); // prints Hello World
+             }<br>
+          }<br>
+          
+        </p>
+      </div>     
+    </div>
+
+    <!-- Accordion Heading Two -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-2">
+      <label for="tab-2">
+        <span>Java Enums</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.<br></b>
+         <h3>Code:</h3><br>
+
+class FreshJuice {<br>
+   enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }<br>
+   FreshJuiceSize size;<br>
+}<br>
+
+public class FreshJuiceTest {<br>
+
+   public static void main(String args[]) {<br>
+      FreshJuice juice = new FreshJuice();<br>
+      juice.size = FreshJuice.FreshJuiceSize.MEDIUM ;<br>
+      System.out.println("Size: " + juice.size);<br>
+   }<br>
+}<br>
+ <b>output</b><br>
+ Size: MEDIUM
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Three -->
+    <div class="parent-tab tab-3">
+      <input type="radio" name="tab" id="tab-3">
+      <label for="tab-3" class="tab-3">
+        <span>Classes in Java</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>A class is a blueprint from which individual objects are created.</b>
+        <br>
+        <h3>Code:</h3><br>
+        public class Dog {<br>
+          String breed;<br>
+          int age;<br>
+          String color;<br>
+       
+          void barking() {<br>
+          }<br>
+       
+          void hungry() {<br>
+          }<br>
+       
+          void sleeping() {<br>
+          }<br>
+       }<br>
+      </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Four -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-4">
+      <label for="tab-4">
+        <span>Java - Loop Control</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>
+
+          Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.</b><br>
+        <h3>Code:</h3><br>
+
+public class Test {<br>
+
+   public static void main(String args[]) {<br>
+      int [] numbers = {10, 20, 30, 40, 50};<br>
+
+      for(int x : numbers ) {<br>
+         System.out.print( x );<br>
+         System.out.print(",");<br>
+      }<br>
+      System.out.print("\n");<br>
+      String [] names = {"James", "Larry", "Tom", "Lacy"};<br>
+
+      for( String name : names ) {<br>
+         System.out.print( name );<br>
+         System.out.print(",");<br>
+      }<br>
+   }<br>
+}<br> 
+<b>output</b><br>
+10, 20, 30, 40, 50,<br>
+James, Larry, Tom, Lacy,
+</p>
+      </div>
+    </div>
+
+    <!--Accordin Heading Five-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-5">
+      <label for="tab-5">
+        <span>Java - Strings Class</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Strings, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.<br>
+
+          The Java platform provides the String class to create and manipulate strings.
+          </b><br>
+           <h3>Code:</h3><br>
+           public class StringDemo {<br>
+
+            public static void main(String args[]) {<br>
+               char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };<br>
+               String helloString = new String(helloArray);  <br>
+               System.out.println( helloString );<br>
+            }<br>
+         }<br>
+         <b>output</b><Br>
+          hello.
+        </p>
+      </div>
+    </div>
+      <!-- Accordion Heading six -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-6">
+      <label for="tab-6">
+        <span>Java - Arrays</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Java provides a data structure, the array, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.<br></b>
+        <h3>Code:</h3><br><br>
+
+public class TestArray {<br>
+
+   public static void main(String[] args) {<br>
+      double[] myList = {1.9, 2.9, 3.4, 3.5};<br>
+
+      // Print all the array elements<br>
+      for (int i = 0; i < myList.length; i++) {<br>
+         System.out.println(myList[i] + " ");<br>
+      }<br>
+     
+      // Summing all elements<br>
+      double total = 0;<br>
+      for (int i = 0; i < myList.length; i++) {<br>
+         total += myList[i];<br>
+      }<br>
+      System.out.println("Total is " + total);<br>
+      
+      // Finding the largest element<br>
+      double max = myList[0];<br>
+      for (int i = 1; i < myList.length; i++) {<br>
+         if (myList[i] > max) max = myList[i];<br>
+      }<br>
+      System.out.println("Max is " + max);  <br>
+   }<br>
+}<br>
+<b>output</b><br>
+1.9<br>
+2.9<br>
+3.4<br>
+3.5<br>
+Total is 11.7<br>
+Max is 3.5
+        </p>
+      </div>
+    </div>
+       <!-- Accordion Heading seven -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-7">
+      <label for="tab-7">
+        <span>Java - Inheritance</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>Inheritance can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.<br></b>
+        <b>The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).<br></b>
+        <h3>Code:</h3><br>
+        class Calculation {<br>
+          int z;<br>
+         
+          public void addition(int x, int y) {<br>
+             z = x + y;<br>
+             System.out.println("The sum of the given numbers:"+z);<br>
+          }<br>
+         
+          public void Subtraction(int x, int y) {<br>
+             z = x - y;<br>
+             System.out.println("The difference between the given numbers:"+z);<br>
+          }<br>
+       }<br>
+       
+       public class My_Calculation extends Calculation {<br>
+          public void multiplication(int x, int y) {<br>
+             z = x * y;<br>
+             System.out.println("The product of the given numbers:"+z);<br>
+          }<br>
+         
+          public static void main(String args[]) {<br>
+             int a = 20, b = 10;<br>
+             My_Calculation demo = new My_Calculation();<br>
+             demo.addition(a, b);<br>
+             demo.Subtraction(a, b);<br>
+             demo.multiplication(a, b);<br>
+          }<br>
+       }<br>
+       <b>Compile and execute the above code as shown below.</b><br>
+       javac My_Calculation.java<br>
+       java My_Calculation
+       <b>uotput:</b><br>
+       The sum of the given numbers:30<br>
+       The difference between the given numbers:10<br>
+       The product of the given numbers:200<br>
+        </p>
+      </div>
+    </div>
+      <!-- Accordion Heading Eight -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-8">
+      <label for="tab-8">
+        <span>Java - Overriding</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>
+
+          The benefit of overriding is: ability to define a behavior that's specific to the subclass type, which means a subclass can implement a parent class method based on its requirement.<br></b>
+        <b>In object-oriented terms, overriding means to override the functionality of an existing method.<br></b>
+        <h3>Code:</h3><br>
+        class Animal {<br>
+           public void move() {<br>
+              System.out.println("Animals can move");<br>
+           }<br>
+        }<br>
+        
+        class Dog extends Animal {<br>
+           public void move() {<br>
+              System.out.println("Dogs can walk and run");<br>
+           }<br>
+        }<br>
+        
+        public class TestDog {<br>
+        
+           public static void main(String args[]) {<br>
+              Animal a = new Animal();   // Animal reference and object<br>
+              Animal b = new Dog();   // Animal reference but Dog object<br>
+        
+              a.move();   // runs the method in Animal class<br>
+              b.move();   // runs the method in Dog class<br>
+           }<br>
+        }<br>
+        <b>Output</b><br>
+        Animals can move<br>
+        Dogs can walk and run
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

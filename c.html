@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Accordion Menu | CodingNepal</title> -->
+    <link rel="stylesheet" href="c.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Accordion Heading One -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-1" checked>
+      <label for="tab-1">
+        <span>C Flow ontrol</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In this tutorial, you will learn about if statement (including if...else and nested if..else) in C programming with the help of examples.<br></b>
+        <h3>C if Statement</h3>
+
+        // Program to display a number if it is negative<br>
+      
+        #include <stdio.h><br><br>
+        int main() {<br>
+            int number;<br>
+        
+            printf("Enter an integer: ");<br>
+            scanf("%d", &number);<br>
+        
+            // true if number is less than 0<br>
+            if (number < 0) {<br>
+                printf("You entered %d.\n", number);<br>
+            }
+        
+            printf("The if statement is easy.");<br>
+        
+            return 0;<br>
+        }<br>
+        <b>Output 1</b><br>
+             Enter an integer: -2<br>
+             You entered -2.<br>
+             You entered -2.<br>
+             When the user enters -2, the test expression number<0 is evaluated to true.<br>
+           Hence, You entered -2 is displayed on the screen.<br>
+
+            <b>Output 2</b><br>
+
+              Enter an integer: 5<br>
+              The if statement is easy.<br>
+
+              When the user enters 5, the test expression number<0 is evaluated to false and the statement inside the body of if is not executed
+
+        </p>
+      </div>     
+    </div>
+
+    <!-- Accordion Heading Two -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-2">
+      <label for="tab-2">
+        <span>C Functions</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In this tutorial, you will be introduced to functions (both user-defined and standard library functions) in C programming. Also, you will learn why functions are used in programming.<br></b>
+         <h3>
+          How user-defined function works?<br></h3>
+          #include <stdio.h><br>
+            void functionName()<br>
+            {<br>
+                ... .. ...<br>
+                ... .. ...<br>
+            }<br>
+            
+            int main()<br>
+            {<br>
+                ... .. ...<br>
+                ... .. ...<br>
+            
+                functionName();<br>
+                
+                ... .. ...<br>
+                ... .. ...<br>
+            }<br>
+            When the compiler encounters functionName();, control of the program jumps to<br>
+            <b> void functionName()<br></b>
+            And, the compiler starts executing the codes inside functionName().<br>
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Three -->
+    <div class="parent-tab tab-3">
+      <input type="radio" name="tab" id="tab-3">
+      <label for="tab-3" class="tab-3">
+        <span>C Recursion</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In this tutorial, you will learn to write recursive functions in C programming with the help of an example.<br>
+
+          A function that calls itself is known as a recursive function. And, this technique is known as recursion.</b><br>
+        <h3>How recursion works?</h3><br>
+        #include <stdio.h>
+          int sum(int n);<br>
+          
+          int main() {<br>
+              int number, result;<br>
+          
+              printf("Enter a positive integer: ");<br>
+              scanf("%d", &number);<br>
+          
+              result = sum(number);<br>
+          
+              printf("sum = %d", result);<br>
+              return 0;<br>
+          }<br>
+          
+          int sum(int n) {<br>
+              if (n != 0)<br>
+                  // sum() function calls itself<br>
+                  return n + sum(n-1); <br>
+              else<br>
+                  return n;<br>
+          }<br>     
+           <b>Output</b>  <br>
+           Enter a positive integer:3<br>
+            sum = 6
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Four -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-4">
+      <label for="tab-4">
+        <span>C Programming Arrays</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In this tutorial, you will learn to work with arrays. You will learn to declare, initialize and access elements of an array with the help of examples.<br></b>
+          <br>
+        <b>An array is a variable that can store multiple values. For example, if you want to store 100 integers, you can create an array for it.<br></b>
+        <h3>Example: Calculate Average</h3><br>
+        // Program to find the average of n numbers using arrays<br>
+
+        #include <stdio.h><br>
+        int main()<br>
+        {<br>
+             int marks[10], i, n, sum = 0, average;<br>
+        
+             printf("Enter number of elements: ");<br>
+             scanf("%d", &n);<br>
+        
+             for(i=0; i<n; ++i)<br>
+             {<br>
+                  printf("Enter number%d: ",i+1);<br>
+                  scanf("%d", &marks[i]);<br>
+                  
+                  // adding integers entered by the user to the sum variable
+                  sum += marks[i];<br>
+             }<br>
+        
+             average = sum/n;<br>
+             printf("Average = %d", average);<br>
+        
+             return 0;<br>
+        }<br>
+        <b>Output</b><br>
+        Enter n: 5
+        Enter number1: 45<br>
+        Enter number2: 35<br>
+        Enter number3: 38<br>
+        Enter number4: 31<br>
+        Enter number5: 49<br>
+        Average = 39<br>
+        Here, we have computed the average of n numbers entered by the user.
+        </p>
+      </div>
+    </div>
+
+    <!--Accordin Heading Five-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-5">
+      <label for="tab-5">
+        <span>C Multi-dimentional Arrays</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In this tutorial, you will learn to work with multidimensional arrays (two-dimensional and three-dimensional arrays) with the help of examples.<br>
+
+         * In C programming, you can create an array of arrays. These arrays are known as multidimensional arrays.</b>
+        <br>
+        <h3>Example 1: Two-dimensional array to store and print values</h3><br>
+        // C program to store temperature of two cities of a week and display it.
+#include <stdio.h><br>
+const int CITY = 2;<br>
+const int WEEK = 7;<br>
+int main()<br>
+{<br>
+  int temperature[CITY][WEEK];<br>
+
+  // Using nested loop to store values in a 2d array<br>
+  for (int i = 0; i < CITY; ++i)<br>
+  {
+    for (int j = 0; j < WEEK; ++j)<br>
+    {
+      printf("City %d, Day %d: ", i + 1, j + 1);<br>
+      scanf("%d", &temperature[i][j]);<br>
+    }<br>
+  }<br>
+  printf("\nDisplaying values: \n\n");<br>
+
+  // Using nested loop to display vlues of a 2d array<br>
+  for (int i = 0; i < CITY; ++i)<br>
+  {<br>
+    for (int j = 0; j < WEEK; ++j)<br>
+    {<br>
+      printf("City %d, Day %d = %d\n", i + 1, j + 1, temperature[i][j]);<br>
+    }<br>
+  }<br>
+  return 0;<br>
+}<br>
+<b>Output</b><br>
+City 1, Day 1: 33<br>
+City 1, Day 2: 34<br>
+City 1, Day 3: 35<br>
+City 1, Day 4: 33<br>
+City 1, Day 5: 32<br>
+City 1, Day 6: 31<br>
+City 1, Day 7: 30<br>
+City 2, Day 1: 23<br>
+City 2, Day 2: 22<br>
+City 2, Day 3: 21<br>
+City 2, Day 4: 24<br>
+City 2, Day 5: 22<br>
+City 2, Day 6: 25<br>
+City 2, Day 7: 26<br>
+<br>
+Displaying values: <br>
+<br>
+City 1, Day 1 = 33<br>
+City 1, Day 2 = 34
+City 1, Day 3 = 35<br>
+City 1, Day 4 = 33<br>
+City 1, Day 5 = 32<br>
+City 1, Day 6 = 31<br>
+City 1, Day 7 = 30<br>
+City 2, Day 1 = 23<br>
+City 2, Day 2 = 22<br>
+City 2, Day 3 = 21<br>
+City 2, Day 4 = 24<br>
+City 2, Day 5 = 22<br>
+City 2, Day 6 = 25<br>
+City 2, Day 7 = 26<br>
+      </p>
+      </div>
+    </div>
+    <!--Accordin Heading six-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-6">
+      <label for="tab-6">
+        <span>C Programming Pointers</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>**Pointers are powerful features of C and C++ programming. Before we learn pointers, let's learn about addresses in C programming.<br></b>
+         <br>
+         #include <stdio.h><br>
+          int main()<br>
+          {<br>
+             int* pc, c;<br>
+             
+             c = 22;<br>
+             printf("Address of c: %p\n", &c);<br>
+             printf("Value of c: %d\n\n", c);  // 22<br>
+             
+             pc = &c;<br>
+             printf("Address of pointer pc: %p\n", pc);<br>
+             printf("Content of pointer pc: %d\n\n", *pc); // 22<br>
+             
+             c = 11;<br>
+             printf("Address of pointer pc: %p\n", pc);<br>
+             printf("Content of pointer pc: %d\n\n", *pc); // 11<br>
+             
+             *pc = 2;<br>
+             printf("Address of c: %p\n", &c);<br>
+             printf("Value of c: %d\n\n", c); // 2<br>
+             return 0;<br>
+          }<br>
+          <br>
+          <h3>Output</h3>
+           <br>Address of c: 2686784<br>
+           Value of c: 22<br>
+
+           Address of pointer pc: 2686784<br>
+           Content of pointer pc: 22<br>
+
+           Address of pointer pc: 2686784<br>
+           Content of pointer pc: 11<br>
+
+           Address of c: 2686784<br>
+           Value of c: 2<br>
+        </p>
+      </div>
+    </div>
+    <!--Accordin Heading seven-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-7">
+      <label for="tab-7">
+        <span>C Programming Strings</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>In C programming, a string is a sequence of characters terminated with a null character \0. <br>
+        </b>
+        <h3>Example: fgets() and puts()</h3>
+        #include <stdio.h><br>
+              
+          int main()<br>
+              
+          {<br>
+                char name[30];<br>
+                
+              printf("Enter name: ");<br>
+                  
+              fgets(name, sizeof(name), stdin);  // read string
+              printf("Name: ");<br>
+                  
+              puts(name);    // display string<br>
+                  
+              return 0;<br>
+                  
+          }<br>
+          <br>
+          <b>Output</b><br>
+          Enter name: Tom Hanks<br>
+          Name: Tom Hanks<br>
+      </p>
+      </div>
+    </div>
+    <!--Accordin Heading eight-->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-8">
+      <label for="tab-8">
+        <span>C Structure </span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p><b>**In C programming, a struct (or structure) is a collection of variables (can be of different types) under a single name.<br></b>
+        <h3>Example: Add two distances</h3><br>
+        #include <stdio.h><br>
+          struct Distance<br>
+          {<br>
+              int feet;<br>
+              float inch;<br>
+          } dist1, dist2, sum;<br>
+          
+          int main()<br>
+          {<br>
+              printf("1st distance\n");<br>
+              printf("Enter feet: ");<br>
+              scanf("%d", &dist1.feet);<br>
+          
+              printf("Enter inch: ");<br>
+              scanf("%f", &dist1.inch);<br>
+              printf("2nd distance\n");<br>
+          
+              printf("Enter feet: ");<br>
+              scanf("%d", &dist2.feet);<br>
+          
+              printf("Enter inch: ");<br>
+              scanf("%f", &dist2.inch);<br>
+          
+              // adding feet<br>
+              sum.feet = dist1.feet + dist2.feet;<br>
+              // adding inches<br>
+              sum.inch = dist1.inch + dist2.inch;<br>
+          
+              // changing to feet if inch is greater than 12<br>
+              while (sum.inch >= 12) <br>
+              {<br>
+                  ++sum.feet;<br>
+                  sum.inch = sum.inch - 12;<br>
+              }<br>
+          
+              printf("Sum of distances = %d\'-%.1f\"", sum.feet, sum.inch);
+              return 0;<br>
+          }<br>
+          <b>Output</b>
+          1st distance<br>
+          Enter feet: 12<br>
+          Enter inch: 7.9<br>
+          2nd distance<br>
+          Enter feet: 2
+          Enter inch: 9.8<br>
+          Sum of distances = 15'-5.7"  <br>        
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
