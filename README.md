@@ -1,2 +1,2 @@
 # E-Commerce-Website
-A e-commerce website
+An e-commerce website
